@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardMaxElevation="15dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/border">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/image_product"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_product"
+            android:text="Title"
+            android:textSize="25dp"
+            android:layout_below="@id/image_product"
+            android:gravity="center"
+            android:fontFamily="@font/andada"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/description_product"
+            android:text="Description"
+            android:textSize="25dp"
+            android:layout_below="@id/title_product"
+            android:gravity="center"
+            android:fontFamily="@font/andada"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
